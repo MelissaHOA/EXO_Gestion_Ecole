@@ -21,7 +21,7 @@
         <mxCell id="XQ9nvu6aSsjh0hOFuqJx-5" value="- age: int&#xa;&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="XQ9nvu6aSsjh0hOFuqJx-2" vertex="1">
           <mxGeometry y="104" width="235" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="pg1mxWmUHJXe1H1death-4" value="- address : Address()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="XQ9nvu6aSsjh0hOFuqJx-2" vertex="1">
+        <mxCell id="pg1mxWmUHJXe1H1death-4" value="- address : Address" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="XQ9nvu6aSsjh0hOFuqJx-2" vertex="1">
           <mxGeometry y="130" width="235" height="26" as="geometry" />
         </mxCell>
         <mxCell id="pg1mxWmUHJXe1H1death-68" value="- phone : int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="XQ9nvu6aSsjh0hOFuqJx-2" vertex="1">
