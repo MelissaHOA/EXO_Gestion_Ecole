@@ -259,7 +259,7 @@
           <mxGeometry x="470" y="500" width="190" height="40" as="geometry" />
         </mxCell>
         <mxCell id="r_dGPDfuyOMvuW0uQrlK-1" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#8b230e&quot;&gt;DIAGRAMME DE CLASSES&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;fontColor=#2d678b;" vertex="1" parent="1">
-          <mxGeometry x="30" y="40" width="250" height="50" as="geometry" />
+          <mxGeometry x="10" y="10" width="250" height="50" as="geometry" />
         </mxCell>
         <mxCell id="r_dGPDfuyOMvuW0uQrlK-2" value="1..n" style="resizable=0;align=left;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;direction=west;" connectable="0" vertex="1" parent="1">
           <mxGeometry x="320" y="690" as="geometry" />
