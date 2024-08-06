@@ -7,9 +7,6 @@
         <mxCell id="eEXtzFnebU0n6qLaqJ4J-27" value="Diagramme de séquence&amp;nbsp;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;fontColor=#f16f04;labelBackgroundColor=none;fontStyle=1;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="20" y="10" width="230" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="eEXtzFnebU0n6qLaqJ4J-28" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="120" width="30" height="60" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
