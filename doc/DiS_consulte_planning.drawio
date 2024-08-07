@@ -49,10 +49,19 @@
             <mxPoint x="110" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IFttiNISdI2RO-dKeA6p-7" value="return location" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;dashed=1;rounded=0;" edge="1" parent="1" source="aM9ryv3xv72pqoxQDRHE-1">
+        <mxCell id="IFttiNISdI2RO-dKeA6p-7" value="return location" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;dashed=1;rounded=0;" edge="1" parent="1" target="aM9ryv3xv72pqoxQDRHE-1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="110" y="195" as="sourcePoint" />
-            <mxPoint x="273" y="195" as="targetPoint" />
+            <mxPoint x="273" y="195" as="sourcePoint" />
+            <mxPoint x="110" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IFttiNISdI2RO-dKeA6p-8" value="&lt;div&gt;planning for lesson&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.3;entryY=0.563;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="40" y="215" as="sourcePoint" />
+            <mxPoint x="10" y="214.89999999999998" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="215" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
