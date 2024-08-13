@@ -103,7 +103,5 @@ class Teacher(Person):
             retour += f"- {course.denomination}. "  # Liste des cours que le professeur enseigne
         retour += "Iel suit les élèves suivants \n"
         for pupil in self.tutor_of:
-<<<<<<< HEAD
             retour += f"- {pupil.get_complete_name()}"  # Liste des élèves encadrés par le professeur
-=======
         return retour  # Retourne les détails du professeur
