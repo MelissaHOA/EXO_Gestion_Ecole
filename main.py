@@ -1,59 +1,56 @@
+from address import Address  # Importation de la classe Address
+# from person import Person  # Importation commentée
+from student import Student  # Importation de la classe Student
+from parent import Parent  # Importation de la classe Parent
+from academicrecord import AcademicRecord  # Importation de la classe AcademicRecord
+from teacher import Teacher  # Importation de la classe Teacher
+from lesson import Lesson  # Importation de la classe Lesson
+# from absence import Absence  # Importation commentée
+from datetime import date  # Importation de la classe date pour la gestion des dates
 
-from address import Address
-# from person import Person
-from student import Student
-from parent import Parent
-from academicrecord import AcademicRecord
-from teacher import Teacher
-from lesson import Lesson
-# from absence import Absence
-from datetime import date
-
+# Bloc d'exécution principal pour tester les classes
 if __name__ == "__main__":
-    # Création d'un enseignant
-    # Création d'une adresse
+    # Création d'une adresse pour l'enseignant
     address = Address("rue des glaieuls", "Toulouse", "31400")
+
+    # Création d'un enseignant avec les informations personnelles et l'adresse
     JohnDoe = Teacher("Marie", "Martin", 40, address, 555666777, "marie.martin@example.com", date.today(), [], [])
-    # Création d'un élève
-    # Création d'une adresse
+
+    # Création d'une adresse pour l'élève
     address = Address("rue du May", "Toulouse", "31000")
-    # Création d'un parent
+
+    # Création d'un parent (père de l'élève) avec les informations personnelles et l'adresse
     papapierre = Parent("Jacques", "Dupont", 40, address, 645789754, "bibi@example.org", date.today(), [])
-    # On ne connaît pas encore les enfants de papapierre
+
+    # Création de l'élève avec les informations personnelles, l'adresse, le parent et le professeur tuteur
     student = Student("Pierre", "Dupont", 20, address, 987654321, "pierre.dupont@example.com", date.today(), papapierre,
-                  JohnDoe, 42)
+                      JohnDoe, 42)
+
+    # Ajout du parent à la liste des parents de l'élève
     student.add_parent(papapierre)
+
+    # Ajout de l'élève à la liste des enfants du parent
     papapierre.add_child(student)
-    # Ajout d'une relation tuteur/ élève
+
+    # Ajout de l'élève à la liste des élèves suivis par l'enseignant (relation tuteur/élève)
     JohnDoe.add_pupil(student)
-    # Création d'une leçon
-    # lesson = Lesson("Mathématiques", date(2024, 9, 1), date(2025, 6, 30), JohnDoe)
 
-    # Création d'une adresse
-    # address = Address("123 Rue de Paris", "Paris", "75000")
-
-    # Création d'une personne
-    # person = Person("Jean", "Dupont", 30, address, 123456789, "jean.dupont@example.com", date.today())
-
-    # Création d'un dossier académique
-    # On crée d'abord un cursus
+    # Création d'un cours (leçon) avec une matière, des dates de début et de fin, et un professeur
     cursus = Lesson("Philosophie", date.today(), date(2025, 6, 30), JohnDoe)
-    academic_record: AcademicRecord = AcademicRecord(pupil=student, course=cursus)
-    # On adjoint un professeur au cours :
+
+    # Création d'un enregistrement académique pour l'élève dans ce cours
+    academic_record = AcademicRecord(pupil=student, course=cursus)
+
+    # Ajout du professeur au cours
     cursus.prof = JohnDoe
+
+    # Définition de la note obtenue par l'élève
     academic_record.set_note(95)
+
+    # Ajout d'un commentaire sur la performance de l'élève
     academic_record.set_comment("Des débuts prometteurs. Révisez les classiques")
 
-    # Création d'un parent
-    # parent = Parent(None)  # L'étudiant sera associé
-    # après sa création
-
-    # Création d'un étudiant
-    # student=Student("Pierre", "Dupont", address, address, "624785432", "jd@example.net", papapierre,JohnDoe, 42)
-    # Associer l'étudiant au parent
-    # parent.student = student
-
-    # Affichage des détails de l'étudiant
+    # Affichage des détails de l'élève
     print(student.get_details())
 
     # Affichage des détails du parent
@@ -62,19 +59,19 @@ if __name__ == "__main__":
     # Affichage des détails de l'enseignant
     print(JohnDoe.get_details())
 
-
-    # Affichage des détails de la leçon
+    # Affichage des détails du cours (leçon)
     print(cursus.get_details())
 
-    # Affichage des adresses enregistré
+    # Affichage de toutes les adresses enregistrées
     print("Voici les adresses enregistrées")
     for lieu in Address.liste_d_adresses:
-        position:Address = lieu
+        position: Address = lieu
         print("- " + position.to_string)
-    # Création d'une absence
+
+    # Création d'une absence (commentée, car la classe Absence est importée mais non utilisée)
     # absence = Absence(date(2024, 11, 15), "Maladie")
 
-    # Ajout, modification, suppression et consultation d'une absence
+    # Ajout, modification, suppression et consultation d'une absence (commentées, car non implémentées)
     # absence.add_absence()
     # absence.modify_absence()
     # absence.delete_absence()
