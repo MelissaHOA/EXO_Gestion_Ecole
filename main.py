@@ -16,6 +16,10 @@ if __name__ == "__main__":
     # Création d'un enseignant avec les informations personnelles et l'adresse
     JohnDoe = Teacher("Marie", "Martin", 40, address, 555666777, "marie.martin@example.com", date.today(), [], [])
 
+    #Création d'une autre adresse et d'un autre enseignant
+    other_address = Address("Rue des pinçons", "Toulouse","31200")
+    JackSmith = Teacher("Bernard", "Durand", 40, other_address, 444888222, "marie.martin@example.com", date.today(), [], [])
+
     # Création d'une adresse pour l'élève
     address = Address("rue du May", "Toulouse", "31000")
 
@@ -38,17 +42,34 @@ if __name__ == "__main__":
     # Création d'un cours (leçon) avec une matière, des dates de début et de fin, et un professeur
     cursus = Lesson("Philosophie", date.today(), date(2025, 6, 30), JohnDoe)
 
+    # Création d'un autre cours
+    cursus2 = Lesson("Mathématiques", date.today(), date(2025, 6, 30), JackSmith)
+
     # Création d'un enregistrement académique pour l'élève dans ce cours
     academic_record = AcademicRecord(pupil=student, course=cursus)
 
+    # Création d'une autre fiche de suivi scolaire
+    academic_record2 = AcademicRecord(pupil=student, course=cursus2)
+
+
     # Ajout du professeur au cours
     cursus.prof = JohnDoe
+    
+    # Ajout d'un prof à l'autre cursus
+    
+    cursus2.prof = JackSmith
 
     # Définition de la note obtenue par l'élève
     academic_record.set_note(95)
+    
+    # definition d'une note à l'autre cours
+    academic_record2.set_note(85)
 
     # Ajout d'un commentaire sur la performance de l'élève
     academic_record.set_comment("Des débuts prometteurs. Révisez les classiques")
+
+    # Ajout d'un commentaire sur la performance de l'élève
+    academic_record2.set_comment("Quelques la cunes à combler en faisant tous les exercices prescrits")
 
     # Affichage des détails de l'élève
     print(student.get_details())
@@ -56,8 +77,11 @@ if __name__ == "__main__":
     # Affichage des détails du parent
     print(papapierre.get_details())
 
-    # Affichage des détails de l'enseignant
+    # Affichage des détails d'un enseignant
     print(JohnDoe.get_details())
+    
+    # Affichage des détails d'un autre enseignant
+    print(JackSmith.get_details())
 
     # Affichage des détails du cours (leçon)
     print(cursus.get_details())

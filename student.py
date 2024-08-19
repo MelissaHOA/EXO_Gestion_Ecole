@@ -108,9 +108,8 @@ class Student(Person):
                       + self._ref_teacher.get_complete_name() + ".\n" \
                       + "Il étudie les matières suivantes :\n"
         for curriculum in self.courses_list:
-            retour += curriculum.course.denomination + "\n"
-            retour += "Son palmarès est le suivant : \n"
-        for note in self.courses_list:
-            appreciation: AcademicRecord = note
-            retour += appreciation.get_details()
+            cours: AcademicRecord = curriculum
+            retour += "- " + cours.course.denomination + ", \n"
+            retour += "son palmarès est le suivant : \n"
+            retour += cours.get_details() + " \n"
         return retour  # Retourne les détails de l'étudiant et de ses résultats académiques
